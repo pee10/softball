@@ -6,6 +6,12 @@ body{
 	color: #333;
 }
 
+.icon:before {
+	content: "";
+	padding-right: 10px;
+	border-left: 7px solid #9cb4a4;
+}
+
 .container {
 	width: 90%;
 	margin: 0 auto;
@@ -22,6 +28,34 @@ header h1 {
 	cursor: pointer;
 }
 
-.schedule {
-	color: #000000;
+table {
+  border-top: 1px solid #4f4d47;
+  border-right: 1px solid #4f4d47;
+  width: 640px;
+  border-spacing: 0;
+  margin: 0 auto;
+}
+
+th, td {
+  border-bottom: 1px solid #4f4d47;
+  border-left: 1px solid #4f4d47;
+  text-align: center;
+  padding: 5px;
+}
+
+th { 
+	background-color: #61c5bb;
+	color: #fff;
+}
+
+@media screen and (max-width: 720px){
+	#outer {
+    box-sizing: border-box;
+    border-right: 1px solid #4f4d47;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+	}
+	#outer table {
+		border-right: none;
+	}
 }
