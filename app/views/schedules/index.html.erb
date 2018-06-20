@@ -1,2 +1,56 @@
-<h1>Schedules#index</h1>
-<p>Find me in app/views/schedules/index.html.erb</p>
+<section class="schedules">
+  <div class="container">
+    <h1 class="icon">日程</h1>
+    <section id="outer">
+      <table>
+        <thead>
+          <tr>
+            <th>日付</th>
+            <th>時間</th>
+            <th>コート</th>
+            <th>チーム1</th>
+            <th>チーム2</th>
+            <th>審判</th>
+            <th>責任審判</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6月30日(土)</td>
+            <td>19:30</td>
+            <td>A</td>
+            <td>下一</td>
+            <td>牛牧</td>
+            <td>牛牧十王</td>
+            <td>牛牧十王</td>
+          </tr>
+          <tr>
+            <td>6月30日(土)</td>
+            <td>20:30</td>
+            <td>A</td>
+            <td>下一</td>
+            <td>牛牧十王</td>
+            <td>牛牧</td>
+            <td>牛牧十王</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</section>
+
+<% @schedules.each do |s| %>
+  <%= s.coat %><br>
+<% end %>
+
+<section class="results">
+  <div class="container">
+    <h1 class="icon">試合結果</h1>
+  </div>
+</section>
+
+<section class="results">
+  <div class="container">
+    <h1 class="icon">順位表</h1>
+  </div>
+</section>
