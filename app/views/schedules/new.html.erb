@@ -1,0 +1,20 @@
+<%= form_for(@schedule) do |f| %>
+
+  <div class="field">
+    <%= f.label :coat %>
+    <%= f.text_field :coat %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+<p>日付 date:date<br>
+時間 time:time<br>
+コート coat<br>
+チーム1 team1<br>
+チーム2 team2<br>
+審判 referee<br>
+責任審判 master_referee</p>

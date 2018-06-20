@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-06-20
+  time: 2018-06-20 21:50:03
+  coat: MyString
+  team1: MyString
+  team2: MyString
+  referee: MyString
+  master_referee: MyString
+
+two:
+  date: 2018-06-20
+  time: 2018-06-20 21:50:03
+  coat: MyString
+  team1: MyString
+  team2: MyString
+  referee: MyString
+  master_referee: MyString
