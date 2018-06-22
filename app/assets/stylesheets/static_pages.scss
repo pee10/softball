@@ -49,13 +49,37 @@ th {
 }
 
 @media screen and (max-width: 720px){
-	#outer {
-    box-sizing: border-box;
+	#outer table { width: 100%; border:none; padding: 10px;}
+	#outer thead { display: none;}
+	#outer tr {
+    border-top: 1px solid #4f4d47;
+    border-bottom: 1px solid #4f4d47;
+    display: block;
+    margin-bottom: 20px;
+	}
+	#outer td {
     border-right: 1px solid #4f4d47;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+    border-bottom: none;
+    display: block;
+    padding: 0;
 	}
-	#outer table {
-		border-right: none;
+	
+		/* tdのデザイン */
+	#outer td:nth-of-type(1) {
+		background-color: #61c5bb; color: #fff;
+		border-bottom: 1px solid #4f4d47;
 	}
+
+	/*td:beforeのデザイン*/
+	#outer td:before {
+    color: #4f4d47;
+    display: block;
+	}
+	 
+	/* contentでタイトルを追加 */
+	#outer td:nth-of-type(2):before { content: "【試合開始】"; font-weight: bolder;}
+	#outer td:nth-of-type(3):before { content: "【コート】"; font-weight: bolder;}
+	#outer td:nth-of-type(4):before { content: "【対戦チーム】"; font-weight: bolder;}
+	#outer td:nth-of-type(6):before { content: "【審判】"; font-weight: bolder;}
+	#outer td:nth-of-type(7):before { content: "【責任審判】"; font-weight: bolder;}
 }
