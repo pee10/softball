@@ -22,3 +22,17 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+日付 game date game_date:date
+時間 start time start_time:string
+コート court court:string
+チーム team name:string
+審判 referee
+責任審判 master_referee
+勝ち won:integer
+負け lost:integer
+得点 got_points:integer
+失点 lost_points:integer
+日程 Schedule game:integer
+
+rails g model Schedule game:integer game_date_id:integer start_time_id:integer court_id:integer team_id:integer

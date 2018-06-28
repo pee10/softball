@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'hirb'         # 出力結果を表として出力するgem
+gem 'hirb-unicode'  # マルチバイト文字の表示を補正するgem
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

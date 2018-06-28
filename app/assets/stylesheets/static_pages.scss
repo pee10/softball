@@ -1,3 +1,5 @@
+/* small screens*/
+
 body{
 	background: #f8f8f8;
 	font-size: 14px;
@@ -17,14 +19,60 @@ body{
 	margin: 0 auto;
 }
 
+body > section {
+	background: #fff;
+	padding: 5px 0;
+}
+
 header h1 {
 	font-size: 28px;
 	font-weight: normal;
 }
 
+.footer {
+	text-align: center;
+	padding: 60px 0;
+	color: #CCC;
+}
+
+#menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .9);
+	color: #fff;
+	display: none;
+}
+
+#menu.shown {
+	display: block;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 10px 20px;
+}
+
+#menu li {
+	line-height: 2;
+}
+
+#menu a {
+	text-decoration: none;
+	color: inherit;
+}
+
 #open_menu {
 	float: right;
 	font-size: 24px;
+	cursor: pointer;
+}
+
+#close_menu {
+	padding: 15px;
+	float: right;
 	cursor: pointer;
 }
 
@@ -48,7 +96,7 @@ th {
 	color: #fff;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 570px){
 	#outer table { width: 100%; border:none; padding: 10px;}
 	#outer thead { display: none;}
 	#outer tr {
@@ -82,4 +130,40 @@ th {
 	#outer td:nth-of-type(4):before { content: "【対戦チーム】"; font-weight: bolder;}
 	#outer td:nth-of-type(6):before { content: "【審判】"; font-weight: bolder;}
 	#outer td:nth-of-type(7):before { content: "【責任審判】"; font-weight: bolder;}
+}
+
+/* large screens*/
+
+@media (min-width: 912px) {
+	
+	.container {
+		width: 820px;
+	}
+	
+	#open_menu {
+		display: none;
+	}
+	
+	#close_menu {
+		display: none;
+	}
+	
+	#menu {
+		display: block;
+		position: static;
+		background: transparent;
+		color: #333;
+	}
+	
+	#menu ul {
+		padding: 0;
+		float: right;
+	}
+	
+	#menu li {
+		display: inline-block;
+		width: 100px;
+		text-align: center;
+	}
+	
 }
