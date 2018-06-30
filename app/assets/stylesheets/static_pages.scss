@@ -8,6 +8,43 @@ body{
 	color: #333;
 }
 
+h3 {
+	font-weight: normal;
+	box-sizing: border-box;
+	padding-left: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 640px;
+	border: solid 1px black;
+	background-color: #61c5bb;
+	color: #fff;
+}
+
+h4 {
+	box-sizing: border-box;
+	padding-left: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	width: 640px;
+}
+
+#results_list {
+	text-align: center;
+}
+
+#results_list ul {
+	list-style: none;
+	margin: 0;
+}
+
+#results_list li {
+	display: inline-block;
+	width: 640px;
+	width: 60px;
+	text-align: center;
+}
+
 .icon:before {
 	content: "";
 	padding-right: 10px;
@@ -91,12 +128,12 @@ th, td {
   padding: 5px;
 }
 
-th { 
+th {
 	background-color: #61c5bb;
 	color: #fff;
 }
 
-@media screen and (max-width: 570px){
+@media screen and (max-width: 640px){
 	#outer table { width: 100%; border:none; padding: 10px;}
 	#outer thead { display: none;}
 	#outer tr {
@@ -130,6 +167,9 @@ th {
 	#outer td:nth-of-type(4):before { content: "【対戦チーム】"; font-weight: bolder;}
 	#outer td:nth-of-type(6):before { content: "【審判】"; font-weight: bolder;}
 	#outer td:nth-of-type(7):before { content: "【責任審判】"; font-weight: bolder;}
+	
+	#outer h3 { width: 100%;}
+	#outer h4 { width: 100%;}
 }
 
 /* large screens*/
