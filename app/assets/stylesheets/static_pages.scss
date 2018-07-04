@@ -8,13 +8,29 @@ body{
 	color: #333;
 }
 
+body > section {
+	background: #fff;
+	padding: 5px 0;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.icon:before {
+	content: "";
+	padding-right: 10px;
+	border-left: 7px solid #9cb4a4;
+}
+
 h3 {
 	font-weight: normal;
 	box-sizing: border-box;
 	padding-left: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 640px;
+	width: 490px;
 	border: solid 1px black;
 	background-color: #61c5bb;
 	color: #fff;
@@ -26,40 +42,9 @@ h4 {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
-	width: 640px;
+	width: 490px;
 }
 
-#results_list {
-	text-align: center;
-}
-
-#results_list ul {
-	list-style: none;
-	margin: 0;
-}
-
-#results_list li {
-	display: inline-block;
-	width: 640px;
-	width: 60px;
-	text-align: center;
-}
-
-.icon:before {
-	content: "";
-	padding-right: 10px;
-	border-left: 7px solid #9cb4a4;
-}
-
-.container {
-	width: 90%;
-	margin: 0 auto;
-}
-
-body > section {
-	background: #fff;
-	padding: 5px 0;
-}
 
 header h1 {
 	font-size: 28px;
@@ -71,6 +56,8 @@ header h1 {
 	padding: 60px 0;
 	color: #CCC;
 }
+
+/* メニュー部分 */
 
 #menu {
 	position: absolute;
@@ -113,10 +100,11 @@ header h1 {
 	cursor: pointer;
 }
 
+/* 試合日程表 */
+
 table {
   border-top: 1px solid #4f4d47;
   border-right: 1px solid #4f4d47;
-  width: 640px;
   border-spacing: 0;
   margin: 0 auto;
 }
@@ -133,8 +121,28 @@ th {
 	color: #fff;
 }
 
+/* 試合結果 */
+
+#results_list {
+	text-align: center;
+}
+
+#results_list ul {
+	list-style: none;
+	margin: 0;
+}
+
+#results_list li {
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}
+
+/* 順位表 */
+
+
 @media screen and (max-width: 640px){
-	#outer table { width: 100%; border:none; padding: 10px;}
+	#outer table { width: 80%; border:none; padding: 10px;}
 	#outer thead { display: none;}
 	#outer tr {
     border-top: 1px solid #4f4d47;
@@ -168,8 +176,11 @@ th {
 	#outer td:nth-of-type(6):before { content: "【審判】"; font-weight: bolder;}
 	#outer td:nth-of-type(7):before { content: "【責任審判】"; font-weight: bolder;}
 	
-	#outer h3 { width: 100%;}
-	#outer h4 { width: 100%;}
+	#outer h3 { width: 80%; padding: 0; text-align: center;}
+	#outer h4 { width: 80%; }
+	
+	#ranking th, td { font-size: 12px;}
+	
 }
 
 /* large screens*/
@@ -196,7 +207,6 @@ th {
 	}
 	
 	#menu ul {
-		padding: 0;
 		float: right;
 	}
 	
