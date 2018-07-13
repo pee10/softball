@@ -23,12 +23,13 @@ Things you may want to cover:
 
 * ...
 
-試合日 game date game_date:date
-時間 start time start_time:string
-コート court court:string
-チーム team team:string
-審判 referee
-責任審判 master_referee
+試合番号(game number)game_number:integer
+試合日(game date)game_date:date
+時間(start time)start_time:string
+コート(court)court:string
+チーム(team)team:string
+審判(referee)team_id:integer
+責任審判(master_referee)team_id:integer
 勝ち won:integer
 負け lost:integer
 得点 got_points:integer
