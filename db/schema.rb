@@ -10,6 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180623062237) do
+ActiveRecord::Schema.define(version: 20180713112545) do
+
+  create_table "games", force: :cascade do |t|
+    t.integer "game_number"
+    t.date "game_date"
+    t.string "start_time"
+    t.string "court"
+    t.integer "team_id"
+    t.integer "won"
+    t.integer "lost"
+    t.integer "got_points"
+    t.integer "lost_points"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
