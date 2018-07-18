@@ -1,0 +1,21 @@
+<%= form_with(model: object, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :game_date %>
+    <%= form.text_field :game_date, id: :game_game_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_time %>
+    <%= form.text_field :start_time, id: :game_start_time %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :court %>
+    <%= form.text_field :court, id: :game_court %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
