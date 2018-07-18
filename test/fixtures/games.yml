@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  game_date: 2018-07-17
+  start_time: 2018-07-17 14:13:59
+  court: MyString
+
+two:
+  game_date: 2018-07-17
+  start_time: 2018-07-17 14:13:59
+  court: MyString
